@@ -1,0 +1,73 @@
+@import url('CSS/reset.css');
+@import url('CSS/layout.css');
+@import url('CSS/typography.css');
+@import url('CSS/masthead.css');
+
+/* menu styles */
+.menu-section {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #dcdde1;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #353B48;
+    padding: .6rem 1rem;
+    display: block;
+    transition: all .5sec ease;
+}
+.menu li a:hover {
+    background-color: #F5F6FA;
+}
+
+.menu-heading {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 600px) {
+    .single-nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .single-nav ul li{
+        flex: 1 0 auto;
+    }
+}
+
+/* flexbox for Advanced Menu */
+@media screen and (min-width: 600px) {
+    .advanced-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .advanced-nav ul li {
+        flex: 1 0 220px;
+    }
+    .advanced-nav ul li a {
+        display: flex;
+    }
+    .advanced-nav ul li a .icon {
+        flex-basis: 3.75rem;
+        font-size: 2.18rem;
+    }
+    .advanced-nav ul li a .text {
+        font-size: 1.56rem;
+        font-weight: bold;
+    }
+    .advanced-nav ul li a .text span {
+        display: block;
+        font-size: .93rem;
+        font-weight: lighter;
+        font-style: italic;
+    }
+}
